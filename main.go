@@ -6,7 +6,8 @@ func main() {
 	var tipeKendaraan string
 	var jam1Motor, jam1Mobil, jam2Motor, jam2Mobil int
 	var jam, menit, tarif, pilihan int
-	var stop bool = false
+	var stop bool
+	stop = false
 	jam1Motor = 3000
 	jam2Motor = 2000
 	jam1Mobil = 5000

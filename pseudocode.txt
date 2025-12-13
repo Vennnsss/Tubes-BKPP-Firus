@@ -1,0 +1,26 @@
+Program Tarif Parkir
+Kamus
+    tipeKendaraan : String
+    jam1Mobil, jam1Motor : Integer
+Algoritma
+    repeat
+
+    repeat
+        asd
+        asdasd
+        asd
+    until (tipeKendaraan != "motor" AND tipeKendaraan != "mobil")
+
+    output("Tarif parkir yang harus dibayar adalah Rp.", tarif, "dengan tipe kendaraan", tipeKendaraan)
+
+
+
+
+
+
+
+
+
+
+
+    until (pilihan == 2)
