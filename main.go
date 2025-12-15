@@ -13,6 +13,7 @@ func main() {
 	jam1Mobil = 5000
 	jam2Mobil = 3000
 	for !stop {
+		tarif = 0
 		fmt.Print("Masukkan tipe kendaraan : ")
 		fmt.Scan(&tipeKendaraan)
 		for tipeKendaraan != "motor" && tipeKendaraan != "mobil" {
@@ -29,8 +30,8 @@ func main() {
 		}
 		fmt.Print("Masukkan Menit Parkir: ")
 		fmt.Scan(&menit)
-		for menit < 0 {
-			fmt.Println("Input Invalid, menit hanya bisa bernilai 0 atau lebih")
+		for menit < 0 || menit > 59 {
+			fmt.Println("Input Invalid, menit hanya bisa bernilai 0-59")
 			fmt.Print("Masukkan Menit Parkir: ")
 			fmt.Scan(&menit)
 		}
@@ -63,6 +64,12 @@ func main() {
 		fmt.Println("2. Tidak")
 		fmt.Print("Pilihan (1/2): ")
 		fmt.Scan(&pilihan)
+
+		for pilihan != 1 && pilihan != 2 {
+			fmt.Println("Pilihan tidak valid, masukkan 1 atau 2")
+			fmt.Print("Pilihan (1/2): ")
+			fmt.Scan(&pilihan)
+		}
 		stop = pilihan == 2
 	}
 	fmt.Println("Program Selesai")
